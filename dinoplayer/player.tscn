@@ -159,7 +159,6 @@ script = ExtResource("1_mbiib")
 [node name="AnimatableBody2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(8, 8)
 sprite_frames = SubResource("SpriteFrames_why61")
-animation = &"crouch"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1, -2)
@@ -173,4 +172,5 @@ shape = SubResource("RectangleShape2D_31ita")
 debug_color = Color(2.35841e-06, 0.64454, 0.278853, 0.42)
 
 [node name="AudioJump" type="AudioStreamPlayer2D" parent="."]
+scale = Vector2(59.1806, 21.7601)
 stream = ExtResource("3_pfgwq")
