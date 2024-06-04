@@ -159,6 +159,7 @@ script = ExtResource("1_mbiib")
 [node name="AnimatableBody2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(8, 8)
 sprite_frames = SubResource("SpriteFrames_why61")
+animation = &"crouch"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1, -2)

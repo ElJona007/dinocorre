@@ -19,6 +19,8 @@ func update_high_score_label():
 		high_score = score 
 		$HighScoreLabel.text = 'High Score: %4'%(high_score)
 
+
+
 func _on_start_button_pressed():
 	score = -10
 	update_score_label()

@@ -2,27 +2,31 @@
 
 [ext_resource type="Script" path="res://mob/mob.gd" id="1_j6il1"]
 [ext_resource type="Texture2D" uid="uid://r4le6dvr5pj1" path="res://icon.svg" id="2_4cvx2"]
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_d51g8"]
+[ext_resource type="Texture2D" uid="uid://cu3l1cmwyro0r" path="res://mob/wall_e.png" id="3_t81nd"]
 
 [node name="MOB" type="Area2D"]
 script = ExtResource("1_j6il1")
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
-position = Vector2(-11, -11)
+position = Vector2(-65, -65.5)
+scale = Vector2(6.4, 6.45)
 
 [node name="SpriteA" type="Sprite2D" parent="."]
 position = Vector2(-64, -65)
 texture = ExtResource("2_4cvx2")
 
-[node name="CollisionA" type="CollisionShape2D" parent="."]
+[node name="CollisionA" type="CollisionPolygon2D" parent="."]
 position = Vector2(-63, -64)
 scale = Vector2(6.52, 6.36)
-shape = SubResource("CircleShape2D_d51g8")
 
 [node name="Timer" type="Timer" parent="."]
 
 [node name="Timer" type="Timer" parent="Timer"]
+
+[node name="Genio" type="Sprite2D" parent="."]
+position = Vector2(-65.1804, -64.9742)
+scale = Vector2(4.17623, 4.56412)
+texture = ExtResource("3_t81nd")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
